@@ -1,0 +1,250 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Heebo:wght@300;500;700&display=swap'); */
+@import "utility.css";
+
+a {
+    text-decoration: none;
+    color: var(--d-primary);
+}
+
+body {
+    min-height: 100vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: -webkit-linear-gradient(30deg, var(--primary), var(--d-primary));
+}
+
+.container {
+    position: relative;
+    width: 414px;
+    height: 736px;
+    border-radius: 30px;
+    overflow: hidden;
+
+    /* Display Size */
+    transform: scale(0.7);
+
+    box-shadow: 6px 10px 12px rgba(0, 0, 0, 0.2);
+    box-sizing: border-box;
+    padding: 15px 15px;
+}
+
+
+/* ==================== */
+/*===== Main Style =====*/
+.container form {
+    position: relative;
+    margin: 44px 10px 10px 10px;
+}
+
+.container form .img-box img {
+    width: 364px;
+}
+
+.container form .form-group {
+    position: absolute;
+    top: 272px;
+    width: 364px;
+    height: 385px;
+    border-radius: 0 0 30px 30px;
+    box-sizing: border-box;
+    padding: 18px 30px;
+}
+
+.form-group #head-form,
+.form-group #foot-form {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.form-group #foot-form a {
+    font-weight: bold;
+}
+
+.form-group .input-group {
+    position: relative;
+    width: 100%;
+    margin: 10px 0;
+}
+
+.form-group .input-group label {
+    display: block;
+    font-size: 20px;
+    margin: 5px 0 0 5px;
+}
+
+.form-group .input-group input {
+    height: 28px;
+    width: calc(100% - 22px);
+    padding: 3px 10px;
+    font-size: 16px;
+    line-height: 20px;
+    border-radius: 6px;
+    border: 1px solid var(--black);
+    outline: none;
+}
+
+.form-group .input-group button {
+    height: 56px;
+    width: 100%;
+    border: none;
+    font-size: 24px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+/* ==================== */
+
+
+/* ==================== */
+/*===== Main Style =====*/
+.container#main::before {
+    content: url(../img/back.png);
+    position: absolute;
+    top: 60px;
+    right: -4px;
+}
+
+.container nav {
+    margin: -15px 0 0 -15px;
+    width: calc(100% + 30px);
+    height: 60px;
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 0 10px;
+}
+
+.container nav a {
+    position: absolute;
+    right: 20px;
+}
+
+.container section {
+    position: relative;
+    width: 100%;
+    margin: 20px 0 5px 0;
+}
+
+
+.container section .head-box {
+    position: relative;
+    height: 16px;
+    width: 100%;
+}
+
+.container section.rec-box .head-box {
+    width: calc(100% - 160px);
+}
+
+.container section .head-box hr {
+    position: absolute;
+    right: 0;
+    top: 7px;
+    width: 240px;
+    border: none;
+    border-bottom: 1px solid #707070;
+}
+
+.container section.search input {
+    height: 28px;
+    width: calc(100% - 22px);
+    padding: 3px 10px;
+    font-size: 16px;
+    line-height: 20px;
+    border-radius: 6px;
+    border: 1px solid var(--black);
+    outline: none;
+
+}
+
+.container section.search img {
+    position: absolute;
+    top: 9px;
+    right: 9px;
+}
+
+.container section.rec-box {
+    position: relative;
+    width: calc(100% + 160px);
+}
+
+.container section.rec-box .box {
+    position: relative;
+    display: inline-block;
+    width: 160px;
+    height: 100px;
+    border-radius: 6px;
+    margin: 15px 10px 10px 0;
+    background-color: var(--white);
+    box-shadow: 1px 2px 6px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+}
+
+.container section.all-box .box img,
+.container section.rec-box .box img.main-img-box {
+    width: 100%;
+    height: 100%;
+    transform: scale(0.9);
+}
+
+.container section.rec-box .box img:nth-child(2) {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+}
+
+.container section .box .detail {
+    position: absolute;
+    left: 0;
+    bottom: 0px;
+    width: 100%;
+    height: 30px;
+    box-sizing: border-box;
+    padding: 0 10px;
+    background-color: rgba(0, 107, 56, 0.8);
+    display: flex;
+    align-items: center;
+    color: var(--white);
+}
+
+.container section.all-box {
+    position: relative;
+    width: 100%;
+}
+
+.container section.all-box .box {
+    position: relative;
+    display: inline-block;
+    width: 120px;
+    height: 100px;
+    border-radius: 6px;
+    margin: 8px 3px 2px 2px;
+    background-color: var(--white);
+    box-shadow: 1px 2px 6px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+}
+
+.container section.nav-menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
+.container section.nav-menu .menu {
+    background-color: var(--white);
+    width: 160px;
+    height: 56px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.2);
+}
+
+.container section.nav-menu .menu a {
+    margin: 12.5px;
+}
